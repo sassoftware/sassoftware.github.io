@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Open Source Software from SAS</title>
+<meta name="description" content="A gallery of open source software projects from SAS Institute, Inc.">
+<meta name="author" content="SAS Institute, Inc.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="images/s-mark.png">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/sassoftware.css">
+<link rel="preload" href="https://www.sas.com/includes/fonts/sas/Anova-Regular.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="preload" href="https://www.sas.com/includes/fonts/sas/Anova-Bold.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="preload" href="https://www.sas.com/includes/fonts/sas/Anova-Light.woff2" as="font" type="font/woff2" crossorigin/>
+</head>
+
+<!-- Primary page layout -->
+
+<body>
+	
+<!-- Menu section -->
+
+<div class="menu">
+	<ul>
+		<li><a href="https://github.com/sassoftware" title="github.com/sassoftware">SAS on GitHub</a></li>
+		<li><a href="https://developer.sas.com/" title="developer.sas.com">For SAS Programmers</a></li>
+		<li><a href="https://www.sas.com/en_us/company-information/why-sas.html" title="sas.com">About SAS</a></li>
+	</ul>
+</div>
+
+<!-- Hero section -->
+
+<div class="grid-container full">
+	<div class="hero">
+		<img class="u-img-hero" src="images/sas-colors.png">
+		<h1>Open source software from SAS</h1>
+		<p>From data to insights. Faster. Help build the future of AI and analytics with open source tools from SAS.</p>
+	</div>
+</div>
+
+<!-- Body section -->
+
+<div class="grid-container halves">
+	<div>
+		<h2>SAS extension for VS Code</h2>
+		<p>The <a href="https://github.com/sassoftware/vscode-sas-extension" title="vscode-sas-extension">SAS Extension for Visual Studio Code</a> provides support for the SAS language, including features such as SAS syntax highlighting, code completion, hover help, code folding, outline, SAS code snippets and run SAS code.</p>
+		<img class="u-img-border" src="images/vs-code.png">
+	</div>
+	<div>
+		<h2>Featured projects</h2>
+		<h6>kubethor</h6>
+		<p>A Kubernetes management web application built using Go and React. It provides a user-friendly interface to manage and monitor Kubernetes clusters efficiently.</p>
+		<p><a class="button button-primary" href="https://github.com/sassoftware/kubethor" title="kubethor">Contribute</a></p>
+		<h6>saspy</h6>
+		<p>A Python interface module to the SAS System. It works with Linux, Windows, and Mainframe SAS as well as with SAS in Viya.</p>
+		<p><a class="button button-primary" href="https://github.com/sassoftware/saspy" title="saspy">Contribute</a></p>
+	</div>
+</div>
+
+<!-- Banded section -->
+
+<div class="band dark-band">
+	<div>
+		<h3>SAS® Viya® cloud deployment. Automated.</h3>
+        <p>Open source Terraform configuration files for provisioning SAS® Viya® resources on public clouds. Deploy on <a href="https://github.com/sassoftware/viya4-iac-gcp" title="viya4-iac-gcp">Google Cloud</a>, <a href="https://github.com/sassoftware/viya4-iac-azure" title="viya4-iac-azure">Microsoft Azure Cloud</a>, and <a href="https://github.com/sassoftware/viya4-iac-aws" title="viya4-iac-aws">Amazon Web Services.</a> </p>
+	</div>
+</div>
+
+<!-- Body section -->
+
+<div class="grid-container halves">
+	<div>
+		<h2>Tutorials and examples</h2>
+		<p>Learn SAS® Viya® with the <a href="https://video.sas.com/category/videos/sas-viya-quick-start" title="SAS® Viya® Quick Start">Quick Start video series</a>. Accelerate your learning with examples and tutorials.</p>
+		<p><a class="button button-primary" href="https://github.com/sassoftware/sas-viya-quick-start" title="sas-viya-quick-start">Get started</a></p>
+	</div>
+	<div>
+		<img class="u-img-border" src="images/quick-start.png">
+	</div>
+</div>
+
+<!-- Banded section -->
+
+<div class="band gray-band">
+	<div>
+		<h3>SAS® Studio custom steps</h3>
+        <p><a href="https://github.com/sassoftware/sas-studio-custom-steps" title="sas-studio-custom-steps">Create user interfaces</a> for SAS® Studio on SAS® Viya®. Customize, save, and share with other users at your site.</p>
+	</div>
+</div>
+
+<!-- Body section -->
+
+<div class="grid-container full">
+	<div>
+		<h3>Explore open source projects from SAS</h3>
+		<p>Browse the <a href="https://github.com/sassoftware" title="SAS Software organization on GitHub">SAS Software organization on GitHub</a>.</p>
+	</div>
+</div>
+
+<!-- Body section -->
+
+<div class="grid-container thirds">
+	<div id="just-launched">
+		<h5>Just launched</h5>
+	</div>
+	<div id="recently-updated">
+		<h5>Recently updated</h5>
+	</div>
+	<div id="most-forked">
+		<h5>Most forked</h5>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript">
+    function renderRepos(arr, tag, count) {
+    const list = document.getElementById(tag);
+    function makeElem(arrItem, arrIndex) {
+        let p = document.createElement('p');
+        let name = arrItem['name'];
+        let description = arrItem['description'];
+
+        /*<p><a href="PROJECT_URL" title="PROJECT_NAME">PROJECT_NAME</a><br />PROJECT_DESCRPTION</p>*/
+
+        p.innerHTML = `<p><a href="https://github.com/sassoftware/${name}" title="${name}">${name}</a><br />${description}</p>`;
+        console.log(arrItem);
+        return p;
+    }
+    let i = 0;
+    arr.forEach((item, index) => {
+        if (i < count){
+        try {
+            const listElement = makeElem(item, index);
+            list.append(listElement);
+            console.log("*");
+        } catch (Error) {
+            console.log(Error);
+        }}
+        i += 1;
+    });
+}
+
+data.sort(function(a,b){ 
+return a['created_at'] < b['created_at'];
+});
+renderRepos(data, "just-launched", 4);
+
+data.sort(function(a,b){ 
+return a['pushed_at'] < b['pushed_at'];
+});
+renderRepos(data, "recently-updated", 4);
+
+data.sort(function(a,b){ 
+return a['forks_count'] < b['forks_count'];
+});
+renderRepos(data, "most-forked", 4);
+
+</script>
+
+<!-- Footer section -->
+
+<div class="footer">
+	<p>©2024 SAS Institute Inc. All Rights Reserved.</p>
+	<ul>
+		<li><a href="https://github.com/sassoftware.github.io" alt="sasssoftware.github.io">Site Code</a></li>
+	</ul>
+</div>
+
+<!-- Document end-->
+</body>
+</html>
