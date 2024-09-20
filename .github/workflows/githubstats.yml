@@ -19,7 +19,7 @@ jobs:
           pwd
           ls
           cd js
-          python3 github-stats.py
+          python3 githubstats.py
     - name: Commit changes
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
