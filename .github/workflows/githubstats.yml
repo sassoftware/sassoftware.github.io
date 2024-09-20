@@ -18,7 +18,7 @@ jobs:
           pip3 install PyGitHub # install PyGitHub package if necessary
           pwd
           ls
-          cd ${{ github.workspace }}/sassoftware.github.io/js
+          cd js
           python3 github-stats.py
     - name: Commit changes
       run: |
