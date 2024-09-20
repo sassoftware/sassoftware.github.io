@@ -1,4 +1,4 @@
-name: Update site
+name: update-site
 on:
   push:
     branches: [ "main" ]
