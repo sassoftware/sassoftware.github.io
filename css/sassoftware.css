@@ -55,7 +55,7 @@ html { font-family: Anova, sans-serif; }
 	html { font-size: 56.5%; }
 }
 
-body { font-weight: 300; color: var(--text-color-normal); background-color: var(--background-color); }
+body { font-weight: 350; color: var(--text-color-normal); background-color: var(--background-color); }
 @media (min-width: 1100px) {
 	body { font-size: 1.6rem; line-height: 1.6; }
 }
