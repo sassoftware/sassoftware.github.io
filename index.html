@@ -141,17 +141,29 @@
 }
 
 data.sort(function(a,b){ 
-return a['created_at'] < b['created_at'];
+if ( a['created_at'] < b['created_at'] )
+{
+	return 1;
+}
+return -1;
 });
 renderRepos(data, "just-launched", 4);
 
 data.sort(function(a,b){ 
-return a['pushed_at'] < b['pushed_at'];
+if ( a['pushed_at'] < b['pushed_at'] )
+{
+	return 1;
+}
+return -1;
 });
 renderRepos(data, "recently-updated", 4);
 
 data.sort(function(a,b){ 
-return a['forks_count'] < b['forks_count'];
+if ( a['forks_count'] < b['forks_count'] )
+{
+	return 1;
+}
+return -1;
 });
 renderRepos(data, "most-forked", 4);
 
