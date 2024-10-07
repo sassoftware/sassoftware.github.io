@@ -10,6 +10,9 @@ Installation is therefore a matter of copying files to a webserver.
 ## Contributing
 Maintainers are not currently accepting patches and contributions to this project.
 
+
+
+
 ## License
 Except for the the contents of the `/images` folder, this project is licensed under the Apache 2.0 License.
 Elements in the `/images` folder are owned by SAS and are not released under an open source license.
