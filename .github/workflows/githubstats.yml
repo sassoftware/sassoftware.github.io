@@ -16,15 +16,13 @@ jobs:
           GITHUBSTATS: ${{ secrets.GITHUBSTATS }}
       run: |
           pip3 install PyGitHub # install PyGitHub package if necessary
-          pwd
-          ls
           cd js
           python3 githubstats.py
     - name: Commit changes
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git commit -a -s -m "Update site database"
+        git commit -a -m "Update database"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
