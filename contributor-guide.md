@@ -17,7 +17,7 @@ It will contain important instructions for contributing to the project.
 It might also offer details about the project's development and code review processes.
 When you understand (and follow) these guidelines, you'll increase the likelihood that project maintainers will accept your contributions.
 
-## Sign your contribution
+## Sign your work
 Everyone contributing to SAS projects must sign [SAS's standard contributor agreement](https://github.com/sassoftware/.github/blob/main/ContributorAgreement.txt), which is built on the [Developer Certificate of Origin](https://developercertificate.org/).
 To comply with the agreement and attest to your right to offer your contribution to a SAS project, simply add the following line to your commits:
 
