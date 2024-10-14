@@ -68,7 +68,7 @@ img { height: auto; }
 	img { width: 100%; display:block; margin: 0 auto;} 
 }
 @media (max-width: 1101px) {
-	img { width: 65%; display:block; margin: 5rem auto 0 auto;}
+	img { width: 75%; display:block; margin: 5rem auto 0 auto;}
 }
 
 pre,
@@ -159,18 +159,12 @@ h6 { margin-bottom: 0.6rem; font-weight: bold; }
 /* Section styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.menu {
-	background-color: var(--theme-color);
-	margin: 4rem 0rem;
-	text-align: center;
-	color: var(--text-color-normal);
-}
 .hero {
 	background-color: var(--theme-hue);
 	text-align: center;
 	color: var(--text-color-inverted);
-	margin: 0rem 0rem 10rem 0rem;
-	padding: 8rem 8rem 4rem 8rem;
+	margin: 5rem 0rem 10rem 0rem;
+	padding: 5rem 8rem 4rem 8rem;
 	border-radius: .5rem; 
 }
 .divider {
@@ -227,20 +221,9 @@ a {
 	color: var(--theme-hue);
 	text-decoration: none;
 }
-
 a:hover {
 	color: var(--accent-hue);
 	text-decoration: none;
-}
-.menu a:link,
-.menu a:visited {
-	color: var(--text-color-normal);
-	text-decoration: none;
-	display: inline-block;
-}
-.menu a:hover,
-.menu a:active {
-	text-decoration: underline;
 }
 .band a:link,
 .band a:visited,
@@ -423,38 +406,27 @@ label > .label-body {
   margin-left: .5rem;
   font-weight: normal; }
 
-
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 ul {
 	list-style: circle inside;
 }
-
 ol {
 	list-style: decimal inside;
 }
-
 ol, ul {
 	padding-left: 0rem;
 	margin-top: 0rem;
 }
-
 ul ul, ul ol, ol ol, ol ul {
 	font-size: 100%;
 	margin: 1rem 0rem 1rem 3rem;
 	color: var(--text-color-softer);
 }
-
 li {
 	margin-bottom: 0.5rem;
 }
-
-.menu li {
-	margin: 1rem 2rem 1rem 2rem;
-	display: inline-block;
-}
-
 .footer li {
 	margin: 0rem 1rem 0rem 1rem;
 	display: inline-block;
@@ -480,7 +452,6 @@ pre > code {
 	overflow: auto; 
 }
 
-
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -504,7 +475,7 @@ td:last-child {
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.u-max-full-width {
+.u-max-width {
 	max-width: 100%;
 	box-sizing: border-box; 
 }
@@ -513,11 +484,11 @@ td:last-child {
 	box-sizing: border-box; 
 }
 .u-half-width {
-	max-width: 50%;
+	width: 50%;
 	box-sizing: border-box; 
 }
 .u-quarter-width {
-	max-width: 25%;
+	width: 25%;
 	box-sizing: border-box; 
 }
 .u-pull-right {
@@ -548,7 +519,7 @@ td:last-child {
 	border: 0.2rem solid var(--image-border); 
 	border-radius: 0.5rem;
 }
-.u-img-divider{
+.u-img-divider {
 	width: auto;
 	display: block; 
 	margin: 0 auto; 
