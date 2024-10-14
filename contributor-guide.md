@@ -1,5 +1,5 @@
-# SAS Software Contributor Handbook
-A guide to contributing to SAS's open source projects
+# SAS Open Source Contributor Handbook
+Contributing to open source projects from SAS Institute Inc.
 
 ## Welcome, contributors
 SAS is the founder and future of analytics.
