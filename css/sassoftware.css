@@ -40,7 +40,7 @@ html {
 	
 	--background-color: white;						/* SAS white */
 	--background-color-softer: #C4DEFD;				/* SAS light blue */
-	--code-background: #7E889A;						/* SAS slate */
+	--code-background: white;						/* SAS white */
 	--image-border: #7E889A;						/* SAS slate */
 }
 
@@ -68,7 +68,7 @@ img { height: auto; }
 	img { width: 100%; display:block; margin: 0 auto;} 
 }
 @media (max-width: 1101px) {
-	img { width: 75%; display:block; margin: 5rem auto 0 auto;}
+	img { width: 75%; display:block; margin: 5rem auto 7rem auto;}
 }
 
 pre,
@@ -506,9 +506,13 @@ td:last-child {
 .u-align-right {
 	text-align: right; 
 }
-.u-embiggen{
+.u-embiggen {
 	font-size: 2.1rem;
 	font-weight: lighter;
+}
+.u-monospace {
+	font-family: monospace;
+	font-size: 85%;
 }
 .u-img-hero { 
 	max-width: 100%;
