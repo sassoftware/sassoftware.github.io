@@ -162,6 +162,22 @@ h6 { margin-bottom: 0.6rem; font-weight: bold; }
 	padding: 5rem 8rem 4rem 8rem;
 	border-radius: .5rem; 
 }
+.header {
+	background-color: var(--theme-hue);
+	text-align: center;
+	color: white;
+	padding: 8rem 10rem 6.8rem 10rem;
+	margin-top: 0rem;
+	margin-bottom: 10rem;
+}
+.footer {
+	background-color: var(--theme-hue);
+	font-size: 1.3rem;
+	text-align: center;
+	color: white;
+	padding: 4rem 0 1rem 0;
+	margin: 8rem 0 0 0;
+}
 .divider {
 	text-align: center;
 	color: var(--text-color-inverted);
@@ -200,14 +216,6 @@ h6 { margin-bottom: 0.6rem; font-weight: bold; }
 	background-color: var(--background-color); 
 	color: var(--text-color-normal);
 }
-.footer {
-	background-color: var(--theme-hue);
-	font-size: 1.3rem;
-	text-align: center;
-	color: white;
-	padding: 4rem 0 1rem 0;
-	margin: 8rem 0 0 0;
-}
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -234,12 +242,18 @@ a:hover {
 .inverted a:active {
 	text-decoration: underline;
 }
-.footer a:link, .footer a:visited {
+.header a:link,
+.header a:visited,
+.footer a:link,
+.footer a:visited {
 	color: white;
 	text-decoration: underline;
 	display: inline-block;
 }
-.footer a:hover, .footer a:active {
+.header a:hover,
+.header a:active,
+.footer a:hover,
+.footer a:active {
 	text-decoration: underline;
 }
 
