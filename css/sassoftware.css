@@ -40,7 +40,7 @@ html {
 	
 	--background-color: white;						/* SAS white */
 	--background-color-softer: #C4DEFD;				/* SAS light blue */
-	--code-background: #7E889A;						/* SAS slate */
+	--code-background: white;						/* SAS white */
 	--image-border: #7E889A;						/* SAS slate */
 }
 
@@ -68,7 +68,7 @@ img { height: auto; }
 	img { width: 100%; display:block; margin: 0 auto;} 
 }
 @media (max-width: 1101px) {
-	img { width: 75%; display:block; margin: 5rem auto 0 auto;}
+	img { width: 75%; display:block; margin: 5rem auto 7rem auto;}
 }
 
 pre,
@@ -81,11 +81,6 @@ ul,
 ol,
 form {
 	margin-bottom: 2.5rem;
-}
-
-button,
-.button {
-  margin-bottom: 1rem;
 }
 
 input,
@@ -109,7 +104,7 @@ h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 2rem; font-weight: normal
 h1 { font-size: 4.8rem; line-height: 1.2;  letter-spacing: -.1rem; }
 h1 { font-weight: bolder; }
 h2 { font-size: 3.1rem; line-height: 1.25; letter-spacing: -.1rem; }
-h3 { font-size: 2.7rem; line-height: 1.3;  letter-spacing: -.1rem; }
+h3 { font-size: 2.6rem; line-height: 1.3;  letter-spacing: -.1rem; }
 h4 { font-size: 2.2rem; line-height: 1.35; letter-spacing: -.08rem; }
 h5 { font-size: 2.0rem; line-height: 1.5;  letter-spacing: -.05rem; }
 h6 { font-size: 1.7rem; line-height: 1.6;  letter-spacing: 0; }
@@ -167,6 +162,22 @@ h6 { margin-bottom: 0.6rem; font-weight: bold; }
 	padding: 5rem 8rem 4rem 8rem;
 	border-radius: .5rem; 
 }
+.header {
+	background-color: var(--theme-hue);
+	text-align: center;
+	color: white;
+	padding: 8rem 10rem 6.8rem 10rem;
+	margin-top: 0rem;
+	margin-bottom: 10rem;
+}
+.footer {
+	background-color: var(--theme-hue);
+	font-size: 1.3rem;
+	text-align: center;
+	color: white;
+	padding: 4rem 0 1rem 0;
+	margin: 8rem 0 0 0;
+}
 .divider {
 	text-align: center;
 	color: var(--text-color-inverted);
@@ -205,14 +216,6 @@ h6 { margin-bottom: 0.6rem; font-weight: bold; }
 	background-color: var(--background-color); 
 	color: var(--text-color-normal);
 }
-.footer {
-	background-color: var(--theme-hue);
-	font-size: 1.3rem;
-	text-align: center;
-	color: white;
-	padding: 4rem 0 1rem 0;
-	margin: 8rem 0 0 0;
-}
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -239,17 +242,28 @@ a:hover {
 .inverted a:active {
 	text-decoration: underline;
 }
-.footer a:link, .footer a:visited {
+.header a:link,
+.header a:visited,
+.footer a:link,
+.footer a:visited {
 	color: white;
 	text-decoration: underline;
 	display: inline-block;
 }
-.footer a:hover, .footer a:active {
+.header a:hover,
+.header a:active,
+.footer a:hover,
+.footer a:active {
 	text-decoration: underline;
 }
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+button,
+.button {
+  margin-bottom: .5rem;
+}
 
 .button,
 button,
@@ -506,9 +520,13 @@ td:last-child {
 .u-align-right {
 	text-align: right; 
 }
-.u-embiggen{
+.u-embiggen {
 	font-size: 2.1rem;
 	font-weight: lighter;
+}
+.u-monospace {
+	font-family: monospace;
+	font-size: 85%;
 }
 .u-img-hero { 
 	max-width: 100%;

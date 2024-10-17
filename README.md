@@ -8,7 +8,8 @@ This project is written entirely in HTML, CSS, and Javascript.
 Installation is therefore a matter of copying files to a webserver.
 
 ## Contributing
-Maintainers are not currently accepting patches and contributions to this project.
+Maintainers are accepting patches and contributions to this project.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on contirbuting to this project.
 
 ## License
 Except for the the contents of the `/images` folder, this project is licensed under the Apache 2.0 License.
