@@ -261,9 +261,10 @@ a:hover {
 button,
 .button {
   margin-bottom: .5rem;
-  margin-right: 3rem;
 }
-
+.grid-container .button {
+	margin-right: 3rem;
+}
 .button,
 button,
 input[type="submit"],
@@ -287,7 +288,6 @@ input[type="button"] {
 	cursor: pointer;
 	box-sizing: border-box; 
 }
-
 .button:hover,
 button:hover,
 input[type="submit"]:hover,
@@ -302,7 +302,6 @@ input[type="button"]:focus {
 	border-color: var(--accent-hue);
 	outline: 0; 
 }
-
 .button.button-classic,
 button.button-classic,
 input[type="submit"].button-classic,
@@ -311,8 +310,8 @@ input[type="button"].button-classic {
   color: var(--button-inverted-color);
   background-color: var(--button-primary-color);
   border-color: var(--button-primary-color); 
+  text-decoration: none !important;
 }
-
 .button.button-classic:hover,
 button.button-classic:hover,
 input[type="submit"].button-classic:hover,
@@ -327,7 +326,6 @@ input[type="button"].button-classic:focus {
   background-color: var(--button-primary-accent);
   border-color: var(--button-primary-accent); 
 }
-
 .button.button-inverted,
 button.button-inverted,
 input[type="submit"].button-inverted,
@@ -338,7 +336,6 @@ background-color: transparent);
 border-color: var(--button-inverted-color); 
 text-decoration: none !important;
 }
-
 .button.button-inverted:hover,
 button.button-inverted:hover,
 input[type="submit"].button-inverted:hover,
