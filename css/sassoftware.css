@@ -539,16 +539,13 @@ td:last-child {
 	font-size: 85%;
 }
 .u-img-hero { 
-	max-width: 100%;
-	margin-top: 1rem;
-	margin-bottom: 6rem; 
+	max-width: 80%;
 }
 @media (max-width: 1101px) {
 	.u-img-hero {
 		display:none;
 	}
 }
-
 .u-img-border {
 	border: 0.2rem solid var(--image-border); 
 	border-radius: 0.5rem;
