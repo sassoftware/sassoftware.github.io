@@ -195,6 +195,11 @@ h6 { font-size: 1.7rem; line-height: 1.6; margin-bottom: 0.6rem; font-weight: bo
 	padding: 2rem;
 	box-sizing: border-box;
 }
+.bleed {
+	background-color: var(--theme-hue);
+	color: white;
+	padding: 10rem 5rem;
+}
 .band {
 	text-align: center;
 	color: var(--text-color-inverted);
@@ -225,6 +230,10 @@ a {
 a:hover {
 	color: var(--accent-hue);
 	text-decoration: none;
+}
+.bleed a:link,
+.bleed a:visited {
+	color: var(--text-color-inverted);
 }
 .band a:link,
 .band a:visited,
