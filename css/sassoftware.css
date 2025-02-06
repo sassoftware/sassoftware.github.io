@@ -502,6 +502,10 @@ td:last-child {
 	width: 100%;
 	box-sizing: border-box; 
 }
+.u-three-quarter-width {
+	width: 75%;
+	box-sizing: border-box;
+}
 .u-half-width {
 	width: 50%;
 	box-sizing: border-box; 
