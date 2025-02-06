@@ -179,7 +179,7 @@ h6 { font-size: 1.7rem; line-height: 1.6; margin-bottom: 0.6rem; font-weight: bo
 .divider {
 	text-align: center;
 	color: var(--text-color-inverted);
-	margin: 13rem 0rem;
+	margin: 15rem 0rem;
 	padding: 0rem;
 }
 .inverted {
@@ -197,13 +197,14 @@ h6 { font-size: 1.7rem; line-height: 1.6; margin-bottom: 0.6rem; font-weight: bo
 }
 .bleed {
 	background-color: var(--theme-hue);
-	color: white;
+	color: var(--text-color-inverted);
 	padding: 10rem 5rem;
+	margin: 0 auto;
 }
 .band {
 	text-align: center;
 	color: var(--text-color-inverted);
-	margin: 13rem 0rem;
+	margin: 15rem 0rem;
 	padding: 7rem 10rem 5rem 10rem;
 }
 .blue-band {
