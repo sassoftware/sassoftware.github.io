@@ -239,7 +239,7 @@ a:hover {
 .band a:visited,
 .inverted a:link,
 .inverted a:visited {
-	color: white;
+	color: var(--text-color-inverted);
 	text-decoration: underline;
 	display: inline-block;
 }
@@ -253,7 +253,7 @@ a:hover {
 .header a:visited,
 .footer a:link,
 .footer a:visited {
-	color: white;
+	color: var(--text-color-inverted);
 	text-decoration: underline;
 	display: inline-block;
 }
