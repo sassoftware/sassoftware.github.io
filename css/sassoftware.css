@@ -52,7 +52,7 @@ html { font-family: Anova, sans-serif; }
 	html { font-size: 61.5%; }
 }
 @media (max-width: 1101px) {
-	html { font-size: 58.5%; }
+	html { font-size: 53.5%; }
 }
 
 body { font-weight: normal; color: var(--text-color-normal); background-color: var(--background-color); }
@@ -68,7 +68,7 @@ img { height: auto; }
 	img { width: 100%; display:block; margin: 0 auto;} 
 }
 @media (max-width: 1101px) {
-	img { width: 75%; display:block; margin: 5rem auto 7rem auto;}
+	img { width: 100%; display:block; margin: 5rem auto 7rem auto;}
 }
 
 pre,
