@@ -52,7 +52,7 @@ html { font-family: Anova, sans-serif; }
 	html { font-size: 61.5%; }
 }
 @media (max-width: 1101px) {
-	html { font-size: 58.5%; }
+	html { font-size: 53.5%; }
 }
 
 body { font-weight: normal; color: var(--text-color-normal); background-color: var(--background-color); }
@@ -68,7 +68,7 @@ img { height: auto; }
 	img { width: 100%; display:block; margin: 0 auto;} 
 }
 @media (max-width: 1101px) {
-	img { width: 75%; display:block; margin: 5rem auto 7rem auto;}
+	img { width: 100%; display:block; margin: 5rem auto 7rem auto;}
 }
 
 pre,
@@ -179,7 +179,7 @@ h6 { font-size: 1.7rem; line-height: 1.6; margin-bottom: 0.6rem; font-weight: bo
 .divider {
 	text-align: center;
 	color: var(--text-color-inverted);
-	margin: 13rem 0rem;
+	margin: 15rem 0rem;
 	padding: 0rem;
 }
 .inverted {
@@ -195,10 +195,16 @@ h6 { font-size: 1.7rem; line-height: 1.6; margin-bottom: 0.6rem; font-weight: bo
 	padding: 2rem;
 	box-sizing: border-box;
 }
+.bleed {
+	background-color: var(--theme-hue);
+	color: var(--text-color-inverted);
+	padding: 10rem 5rem;
+	margin: 0 auto;
+}
 .band {
 	text-align: center;
 	color: var(--text-color-inverted);
-	margin: 13rem 0rem;
+	margin: 15rem 0rem;
 	padding: 7rem 10rem 5rem 10rem;
 }
 .blue-band {
@@ -226,11 +232,15 @@ a:hover {
 	color: var(--accent-hue);
 	text-decoration: none;
 }
+.bleed a:link,
+.bleed a:visited {
+	color: var(--text-color-inverted);
+}
 .band a:link,
 .band a:visited,
 .inverted a:link,
 .inverted a:visited {
-	color: white;
+	color: var(--text-color-inverted);
 	text-decoration: underline;
 	display: inline-block;
 }
@@ -244,7 +254,7 @@ a:hover {
 .header a:visited,
 .footer a:link,
 .footer a:visited {
-	color: white;
+	color: var(--text-color-inverted);
 	text-decoration: underline;
 	display: inline-block;
 }
@@ -493,6 +503,10 @@ td:last-child {
 	width: 100%;
 	box-sizing: border-box; 
 }
+.u-three-quarter-width {
+	width: 75%;
+	box-sizing: border-box;
+}
 .u-half-width {
 	width: 50%;
 	box-sizing: border-box; 
@@ -525,9 +539,12 @@ td:last-child {
 	font-size: 85%;
 }
 .u-img-hero { 
-	max-width: 100%;
-	margin-top: 1rem;
-	margin-bottom: 6rem; 
+	max-width: 80%;
+}
+@media (max-width: 1101px) {
+	.u-img-hero {
+		display:none;
+	}
 }
 .u-img-border {
 	border: 0.2rem solid var(--image-border); 
