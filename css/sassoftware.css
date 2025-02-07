@@ -281,13 +281,13 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
 	display: inline-block;
-	height: 38px;
-	padding: 0 30px;
+	height: 40px;
+	padding: 0 26px;
 	color: var(--theme-hue);
 	text-align: center;
-	font-size: 13.5px;
+	font-size: 14.5px;
 	font-weight: normal;
-	line-height: 38px;
+	line-height: 37px;
 	letter-spacing: .1rem;
 	text-transform: none;
 	text-decoration: none;
