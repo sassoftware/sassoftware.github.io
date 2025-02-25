@@ -538,6 +538,18 @@ td:last-child {
 	font-family: monospace;
 	font-size: 85%;
 }
+.u-badge {
+	color: var(--accent-hue);
+	letter-spacing: .13rem;
+	text-transform: uppercase;
+	font-size: 50%;
+	font-weight: bolder;
+	border: 1px solid var(--accent-hue);
+	border-radius: .5rem;
+	padding: .75rem;
+	display: inline-block;
+	box-shadow: .3rem .3rem .1rem;
+}
 .u-img-hero { 
 	max-width: 80%;
 }
