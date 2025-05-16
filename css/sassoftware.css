@@ -550,12 +550,15 @@ td:last-child {
 	display: inline-block;
 	box-shadow: .3rem .3rem .1rem;
 }
-.u-img-hero { 
+.u-img-hero {
 	max-width: 80%;
 }
+.u-img-hiding { 
+	display: block;
+}
 @media (max-width: 1101px) {
-	.u-img-hero {
-		display:none;
+	.u-img-hiding {
+		display: none;
 	}
 }
 .u-img-border {
