@@ -265,6 +265,66 @@ a:hover {
 	text-decoration: underline;
 }
 
+/* Shapes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.shapes {
+	margin: 0 auto;
+}
+
+.shape {
+	float: left;
+}
+
+.circle {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 5rem;
+	background-color: var(--theme-hue);
+}
+
+.semicircle-up {
+	width: 10rem;
+	height: 5rem;
+	border-radius: 0 0 5rem 5rem;
+	background-color: var(--darker-hue);
+}
+
+.semicircle-down {
+	width: 10rem;
+	height: 5rem;
+	border-radius: 5rem 5rem 0 0;
+	background-color: var(--theme-hue);
+}
+
+.oblique {
+	width: 10rem;
+	height: 5rem;
+	border-radius: 0 5rem 0 5rem;
+	background-color: var(--accent-hue);
+}
+
+.reverse-oblique {
+	width: 10rem;
+	height: 5rem;
+	border-radius: 5rem 0 5rem 0;
+	background-color: var(--darker-hue);
+}
+
+.quartercircle-left {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 0 0 0 5rem;
+	background-color: var(--accent-hue);
+}
+
+.quartercircle-right {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 5rem 0 0 0;
+	background-color: var(--theme-hue);
+}
+
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -553,11 +613,11 @@ td:last-child {
 .u-img-hero {
 	max-width: 80%;
 }
-.u-img-hiding { 
-	display: block;
+.u-hiding { 
+	position: relative;
 }
 @media (max-width: 1101px) {
-	.u-img-hiding {
+	.u-hiding {
 		display: none;
 	}
 }
