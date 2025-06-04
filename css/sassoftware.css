@@ -277,7 +277,7 @@ a:hover {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .shapes {
-	margin: 0 auto;
+	margin: auto auto;
 }
 .shape {
 	float: left;
