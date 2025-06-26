@@ -131,64 +131,6 @@
 	</div>
 </div>
 
-<script type="text/javascript" src="js/data.js"></script>
-<script type="text/javascript">
-    function renderRepos(arr, tag, count) {
-    const list = document.getElementById(tag);
-    function makeElem(arrItem, arrIndex) {
-        let p = document.createElement('p');
-        let name = arrItem['name'];
-        let description = arrItem['description'];
-
-        /*<p><a href="PROJECT_URL" title="PROJECT_NAME">PROJECT_NAME</a><br />PROJECT_DESCRPTION</p>*/
-
-        p.innerHTML = `<p><a href="https://github.com/sassoftware/${name}" title="${name}">${name}</a><br />${description}</p>`;
-        console.log(arrItem);
-        return p;
-    }
-    let i = 0;
-    arr.forEach((item, index) => {
-        if (i < count){
-        try {
-            const listElement = makeElem(item, index);
-            list.append(listElement);
-            console.log("*");
-        } catch (Error) {
-            console.log(Error);
-        }}
-        i += 1;
-    });
-}
-
-data.sort(function(a,b){ 
-if ( a['created_at'] < b['created_at'] )
-{
-	return 1;
-}
-return -1;
-});
-renderRepos(data, "just-launched", 4);
-
-data.sort(function(a,b){ 
-if ( a['pushed_at'] < b['pushed_at'] )
-{
-	return 1;
-}
-return -1;
-});
-renderRepos(data, "recently-updated", 4);
-
-data.sort(function(a,b){ 
-if ( a['forks_count'] < b['forks_count'] )
-{
-	return 1;
-}
-return -1;
-});
-renderRepos(data, "most-forked", 4);
-
-</script>
-
 <!-- Banded section -->
 
 <div class="divider">
@@ -413,6 +355,66 @@ renderRepos(data, "most-forked", 4);
 		<li><a href="https://www.sas.com/en_us/company-information/why-sas.html" title="sas.com">About SAS</a></li>
 	</ul>
 </div>
+
+<!--Scripts -->
+
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript">
+    function renderRepos(arr, tag, count) {
+    const list = document.getElementById(tag);
+    function makeElem(arrItem, arrIndex) {
+        let p = document.createElement('p');
+        let name = arrItem['name'];
+        let description = arrItem['description'];
+
+        /*<p><a href="PROJECT_URL" title="PROJECT_NAME">PROJECT_NAME</a><br />PROJECT_DESCRPTION</p>*/
+
+        p.innerHTML = `<p><a href="https://github.com/sassoftware/${name}" title="${name}">${name}</a><br />${description}</p>`;
+        console.log(arrItem);
+        return p;
+    }
+    let i = 0;
+    arr.forEach((item, index) => {
+        if (i < count){
+        try {
+            const listElement = makeElem(item, index);
+            list.append(listElement);
+            console.log("*");
+        } catch (Error) {
+            console.log(Error);
+        }}
+        i += 1;
+    });
+}
+
+data.sort(function(a,b){ 
+if ( a['created_at'] < b['created_at'] )
+{
+	return 1;
+}
+return -1;
+});
+renderRepos(data, "just-launched", 4);
+
+data.sort(function(a,b){ 
+if ( a['pushed_at'] < b['pushed_at'] )
+{
+	return 1;
+}
+return -1;
+});
+renderRepos(data, "recently-updated", 4);
+
+data.sort(function(a,b){ 
+if ( a['forks_count'] < b['forks_count'] )
+{
+	return 1;
+}
+return -1;
+});
+renderRepos(data, "most-forked", 4);
+
+</script>
 
 <!-- Document end-->
 </body>
