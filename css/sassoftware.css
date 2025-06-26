@@ -183,11 +183,19 @@ h6 { font-size: 1.7rem; line-height: 1.6; margin-bottom: 0.6rem; font-weight: bo
 	padding: 0rem;
 }
 .inverted {
-	background-color: var(--theme-hue);
 	color: white;
 	border-radius: .5rem;
 	padding: 4rem;
 	box-sizing: border-box;
+}
+.inverted-blue {
+	background-color: var(--theme-hue);
+}
+.inverted-dark {
+	background-color: var(--darker-hue);
+}
+.inverted-gray {
+	background-color: var(--gray-hue);
 }
 .boxed {
 	border: 1px solid var(--border-color-softer);
@@ -263,6 +271,87 @@ a:hover {
 .footer a:hover,
 .footer a:active {
 	text-decoration: underline;
+}
+
+/* Shapes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.shapes {
+	margin: auto auto;
+}
+.shape {
+	float: left;
+}
+.circle-blue {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 5rem;
+	background-color: var(--theme-hue);
+	margin: 0 1rem 0 0;
+}
+.circle-dark {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 5rem;
+	background-color: var(--darker-hue);
+	margin: 0 1rem 0 0;
+}
+.circle-gray {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 5rem;
+	background-color: var(--gray-hue);
+	margin: 0 1rem 0 0;	
+}
+.circle-transparent {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 5rem;
+	border: .01rem solid var(--theme-hue);
+	background-color: var(--background-color);
+	margin: 0 1rem 0 0;	
+}
+.semicircle-up {
+	width: 10rem;
+	height: 5rem;
+	border-radius: 0 0 5rem 5rem;
+	background-color: var(--darker-hue);
+	margin: 0 1rem 0 0;
+}
+.semicircle-down {
+	width: 10rem;
+	height: 5rem;
+	border-radius: 5rem 5rem 0 0;
+	background-color: var(--theme-hue);
+	margin: 0 1rem 0 0;
+}
+.oblique {
+	width: 10rem;
+	height: 5rem;
+	border-radius: 0 5rem 0 5rem;
+	background-color: var(--accent-hue);
+	margin: 0 1rem 0 0;
+}
+.reverse-oblique {
+	width: 10rem;
+	height: 5rem;
+	border-radius: 5rem 0 5rem 0;
+	background-color: var(--darker-hue);
+	margin: 0 1rem 0 0;
+}
+.quartercircle-left {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 0 0 0 5rem;
+	background-color: var(--accent-hue);
+	margin: 0 1rem 0 0;
+}
+.quartercircle-right {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 5rem 0 0 0;
+	background-color: var(--theme-hue);
+	margin: 0 1rem 0 0;
 }
 
 /* Buttons
@@ -553,11 +642,11 @@ td:last-child {
 .u-img-hero {
 	max-width: 80%;
 }
-.u-img-hiding { 
-	display: block;
+.u-hiding { 
+	position: relative;
 }
 @media (max-width: 1101px) {
-	.u-img-hiding {
+	.u-hiding {
 		display: none;
 	}
 }
