@@ -1,11 +1,5 @@
 # Contributing
 
-<!-- Use this text if your project is not accepting contributions. -->
-
-Maintainers are not currently accepting patches and contributions to this project.
-
-<!-- Use this text if your project is accepting contributions. -->
-
 Maintainers are accepting patches and contributions to this project.
 
 Please note the following contribution guidelines.
