@@ -37,6 +37,7 @@ html {
 
 	--border-color: #0766D1;						/* SAS blue */
 	--border-color-softer: #C4DEFD;					/* SAS light blue */
+	--border-color-richer: #032954;					/* SAS midnight blue */
 	
 	--background-color: white;						/* SAS white */
 	--background-color-softer: #C4DEFD;				/* SAS light blue */
@@ -162,11 +163,13 @@ h6 { font-size: 1.7rem; line-height: 1.6; margin-bottom: 0.6rem; font-weight: bo
 }
 .header {
 	background-color: var(--theme-hue);
+	border-top: 5rem double var(--border-color-softer);
+	border-bottom: 5rem double var(--border-color-softer);
+	outline: 5rem double var(--border-color-richer);
 	text-align: center;
-	color: white;
-	padding: 8rem 10rem 6.8rem 10rem;
-	margin-top: 0rem;
-	margin-bottom: 10rem;
+	color: var(--text-color-inverted);
+	padding: 3rem 8rem 3rem 8rem;
+	margin: 5rem 0rem 15rem 0rem;
 }
 .footer {
 	background-color: var(--theme-hue);
