@@ -23,6 +23,7 @@ html {
 	--theme-hue: #0766D1;							/* SAS blue */
 	--accent-hue: #4398F9;							/* SAS medium blue */
 	--darker-hue: #032954;							/* SAS midnight blue */
+	--lighter-hue: #C4DEFD;							/* SAS light blue */
 	--gray-hue: #7E889A;							/* SAS slate */
 
 	--text-color-richer: #032954;					/* SAS midnight blue */
@@ -163,12 +164,12 @@ h6 { font-size: 1.7rem; line-height: 1.6; margin-bottom: 0.6rem; font-weight: bo
 }
 .header {
 	background-color: var(--theme-hue);
-	border-top: 5rem double var(--border-color-softer);
-	border-bottom: 5rem double var(--border-color-softer);
-	outline: 5rem double var(--border-color-richer);
+	border-top: 2.5rem double var(--border-color-softer);
+	border-bottom: 2.5rem double var(--border-color-softer);
+	outline: 2.5rem double var(--border-color-richer);
 	text-align: center;
 	color: var(--text-color-inverted);
-	padding: 3rem 8rem 3rem 8rem;
+	padding: 4rem 8rem 4rem 8rem;
 	margin: 5rem 0rem 15rem 0rem;
 }
 .footer {
@@ -285,7 +286,7 @@ a:hover {
 .shape {
 	float: left;
 }
-.circle-blue {
+.circle {
 	width: 5rem;
 	height: 5rem;
 	border-radius: 5rem;
@@ -318,7 +319,7 @@ a:hover {
 	width: 10rem;
 	height: 5rem;
 	border-radius: 0 0 5rem 5rem;
-	background-color: var(--darker-hue);
+	background-color: var(--theme-hue);
 	margin: 0 1rem 0 0;
 }
 .semicircle-down {
@@ -328,18 +329,32 @@ a:hover {
 	background-color: var(--theme-hue);
 	margin: 0 1rem 0 0;
 }
-.oblique {
+.semicircle-up-dark {
+	width: 10rem;
+	height: 5rem;
+	border-radius: 5rem 5rem 0 0;
+	background-color: var(--darker-hue);
+	margin: 0 1rem 0 0;
+}
+.semicircle-down-dark {
+	width: 10rem;
+	height: 5rem;
+	border-radius: 5rem 5rem 0 0;
+	background-color: var(--darker-hue);
+	margin: 0 1rem 0 0;
+}
+.blade {
 	width: 10rem;
 	height: 5rem;
 	border-radius: 0 5rem 0 5rem;
-	background-color: var(--accent-hue);
+	background-color: var(--theme-hue);
 	margin: 0 1rem 0 0;
 }
-.reverse-oblique {
+.blade-reverse {
 	width: 10rem;
 	height: 5rem;
 	border-radius: 5rem 0 5rem 0;
-	background-color: var(--darker-hue);
+	background-color: var(--theme-hue);
 	margin: 0 1rem 0 0;
 }
 .quartercircle-left {
@@ -354,6 +369,13 @@ a:hover {
 	height: 5rem;
 	border-radius: 5rem 0 0 0;
 	background-color: var(--theme-hue);
+	margin: 0 1rem 0 0;
+}
+.quartercircle-right-light {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 5rem 0 0 0;
+	background-color: var(--accent-hue);
 	margin: 0 1rem 0 0;
 }
 
