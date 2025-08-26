@@ -21,22 +21,22 @@
 <!-- Banded section -->
 
 <div class="header">
-		<img class="u-hiding" src="images/sas-colors.png" style="margin-bottom:10rem;">
-		<h1>SAS Open Source Contributor Handbook</h1>
-		<p>Contributing to <a href="https://sassoftware.github.io/" title="sassoftware.github.io">open source projects from SAS Institute Inc.</a></p>
+	<h1>SAS Open Source Contributor Handbook</h1>
+	<p>Contributing to <a href="https://sassoftware.github.io/" title="sassoftware.github.io">open source projects from SAS Institute Inc.</a></p>
 </div>
 
 <!-- Body section -->
 
 <div class="grid-container halves">
-	<div>
-		<img src="images/sas-screens.png">
-	</div>
 	<div>
 		<h2>Welcome, contributors</h2>
 		<hr>
 		<p class="u-embiggen">SAS is the founder and future of analytics.</p>
 		<p class="u-embiggen">When you contribute to SAS's open source projects, you'll build tools that help people make better decisions, faster.</p>
+		<p class="u-embiggen">Just follow these steps to get started.</p>
+	</div>
+	<div>
+		<img class="u-hiding" src="images/sas-screens.png">
 	</div>
 </div>
 
@@ -52,33 +52,25 @@
 
 <div class="grid-container halves">
 	<div>
-		<h2>Where to start</h2>	
+		<h2>Step 1: Find a project</h2>	
 		<p><a href="https://github.com/sassoftware" title="github.com/sassoftware">SAS Software on GitHub</a> is home to more than 150 open source projects from SAS. Find open projects, plugins, examples, and other resources for extending and integrating SAS's powerful tools with open source languages and frameworks.</p>
 		<a class="button button-classic" href="https://sassoftware.github.io">Browse projects</a>
 	</div>
-	<div>
-		<img class="u-half-width" src="images/icon-location.png">
+	<div class="u-hiding shapes">
+		<div class="shape circle-transparent"></div>
+		<div class="shape blade-reverse"></div>
+		<div class="shape semicircle-down-dark"></div>
 	</div>
-</div>
-
-<!-- Banded section -->
-
-<div class="divider">
-	<div>
-		<img class="u-img-divider" src="images/standard-section-divider.png">
-	</div>
-</div>
-
-<!-- Body section -->
-
-<div class="grid-container halves">
-	<div>
-		<img class="u-half-width" src="images/icon-guidelines.png">
+	<div class="u-hiding shapes">
+		<div class="shape blade"></div>
+		<div class="shape quartercircle-right-light"></div>
+		<div class="shape circle-dark"></div>
 	</div>
 	<div>
-		<h2>Read the guidelines</h2>	
+		<h2>Step 2: Read the guidelines</h2>
 		<p>If a SAS open source project is accepting contributions, the project repository will contain a <span style="font-family:monospace;">CONTRIBUTING.md</span> file. Read that file carefully. It will contain important instructions for contributing to the project. It might also offer details about the project's development and code review processes.</p>
 		<p>When you understand (and follow) these guidelines, you'll increase the likelihood that project maintainers will accept your contributions.</p>
+		<p><a class="button button-classic" href="https://github.com/sassoftware/sas-code-examples/blob/main/CONTRIBUTING.md" title="Contributing to sas-code-examples">See example</a>
 	</div>
 </div>
 
@@ -94,7 +86,7 @@
 
 <div class="grid-container halves">
 	<div>
-		<h2>Sign your work</h2>
+		<h2>Step 3: Sign your work</h2>
 		<p>Everyone contributing to SAS projects must sign <a href="https://github.com/sassoftware/.github/blob/main/ContributorAgreement.txt" tite="ContributoAgreement.txt">SAS's standard contributor agreement</a>, which is built on the <a href="https://developercertificate.org/" title="Developer Certificate of Origin"> Developer Certificate of Origin</a>.
 		<p>To comply with the agreement and attest to your right to offer your contribution to a SAS project, simply add the following line to your commits:</p>
 		<pre><code>Signed-off-by: Firstname Lastname &lt;user@mail.com&gt;</code></pre>
@@ -109,7 +101,7 @@
 		<p class="u-monospace">Version 1.1</p>
 		<p class="u-monospace">Contributions to this software are accepted only when they are properly accompanied by a Contributor Agreement. The Contributor Agreement for this software is the Developer's Certificate of Origin 1.1 (DCO) as provided with and required for accepting contributions to the Linux kernel.</p>
 		<p class="u-monospace">In each contribution proposed to be included in this software, the developer must include a "sign-off" that denotes consent to the terms of the Developer's Certificate of Origin. The sign-off is a line of text in the description that accompanies the change, certifying that you have the right to provide the contribution to be included. For changes provided in source code control (for example, via a Git pull request) the sign-off must be included in the commit message in source code control. For changes provided in email or issue tracking, the sign-off must be included in the email or the issue, and the sign-off will be incorporated into the permanent commit message if the contribution is accepted into the official source code.</p>
-	<a class="button" href="https://raw.githubusercontent.com/sassoftware/.github/refs/heads/main/ContributorAgreement.txt" tite="ContributoAgreement.txt">Read the full agreement</a>
+	<a class="button" href="https://raw.githubusercontent.com/sassoftware/.github/refs/heads/main/ContributorAgreement.txt" tite="ContributorAgreement.txt">Read the full agreement</a>
 	</div>
 </div>
 
@@ -123,27 +115,28 @@
 
 <!-- Body section -->
 
-<div class="grid-container thirds">
+<div class="grid-container halves">
 	<div>
-		<h2>Submit for review</h2>
-		<hr>
-		<p class="u-embiggen">Each of SAS's open source projects has its own team of maintainers at SAS. Each one therefore has its own set of code conventions and review process, too.</p>
-	</div>
-	<div>
-		<h3>What to expect</h3>
+		<h2>Step 4: Submit for review</h2>
+		<p>The time has come. Submit your pull request so we can take a look.</p>
+		<h4>What to expect</h4>
 		<p>A project's <span style="font-family:monospace;">CONTRIBUTING.md</span> file will detail the project's code review processes. All contributions require review from SAS project maintainers. They may run unit tests, development tests, integrations tests, and security scans using internal SAS infrastructure. In this case, they may not merge a contribution directly from GitHub; instead, they'll work with submissions internally first, vetting them to ensure they meet SAS standards.</p>
 	</div>
-	<div>
-		<h3>Our promise</h3>
-		<p>We’ll always do our best to work with contributors in public issues and pull requests; however, to ensure our code meets our internal compliance standards, we may need to incorporate your submission into a solution we push ourselves. And we work to ensure all contributors receive appropriate recognition for their contributions—at the very least, by acknowledging contributors in our release notes.</p>
+	<div class="inverted inverted-blue">
+		<h3>Find a maintainer</h3>
+		<p>Each of SAS's open source projects has its own team of maintainers at SAS. Each one therefore has its own set of code conventions and review process, too.</p>
+		<p>Need help? Just ask.</p>
+		<p><a class="button button-inverted" href="https://github.com/orgs/sassoftware/people" title="Find a maintainer">Find a maintainer</a></p>
 	</div>
 </div>
 
 <!-- Banded section -->
-
-<div class="divider">
+<div class="band transparent-band">
 	<div>
-		<img class="u-img-divider" src="images/standard-section-divider.png">
+		<hr>
+		<h2>Our promise</h2>
+		<p>We’ll always do our best to work with contributors in public issues and pull requests; however, to ensure our code meets our internal compliance standards, we may need to incorporate your submission into a solution we push ourselves. And we work to ensure all contributors receive appropriate recognition for their contributions—at the very least, by acknowledging contributors in our release notes.</p>
+		<hr>
 	</div>
 </div>
 
