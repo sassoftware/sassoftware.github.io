@@ -207,6 +207,14 @@ h6 { font-size: 1.7rem; line-height: 1.6; margin-bottom: 0.6rem; font-weight: bo
 	padding: 2rem;
 	box-sizing: border-box;
 }
+.carded {
+	border: 1px solid var(--border-color);
+	border-radius: 1.5rem;
+	padding: 5.5rem 3.5rem 2.5rem 3.5rem;
+	background-color: var(--background-color);
+	box-sizing: border-box;
+	box-shadow: 1.7rem 1.7rem .1rem 0 var(--background-color-softer);
+}
 .bleed {
 	background-color: var(--theme-hue);
 	color: var(--text-color-inverted);
