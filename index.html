@@ -1,414 +1,791 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Open Source Software from SAS</title>
-<meta name="description" content="A gallery of open source software projects from SAS Institute, Inc.">
-<meta name="author" content="SAS Institute, Inc.">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/png" href="images/s-mark.png">
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/sassoftware.css">
-<link rel="preload" href="https://www.sas.com/includes/fonts/sas/Anova-Regular.woff2" as="font" type="font/woff2" crossorigin/>
-<link rel="preload" href="https://www.sas.com/includes/fonts/sas/Anova-Bold.woff2" as="font" type="font/woff2" crossorigin/>
-<link rel="preload" href="https://www.sas.com/includes/fonts/sas/Anova-Light.woff2" as="font" type="font/woff2" crossorigin/>
-</head>
+	<head>
+		<meta charset="utf-8" />
+		<title>Open Source Software from SAS</title>
+		<meta
+			name="description"
+			content="A gallery of open source software projects from SAS Institute, Inc."
+		/>
+		<meta name="author" content="SAS Institute, Inc." />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/png" href="images/s-mark.png" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/sassoftware.css" />
+		<link
+			rel="preload"
+			href="https://www.sas.com/includes/fonts/sas/Anova-Regular.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="https://www.sas.com/includes/fonts/sas/Anova-Bold.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="https://www.sas.com/includes/fonts/sas/Anova-Light.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+	</head>
 
-<!-- Primary page layout -->
+	<!-- Primary page layout -->
 
-<body>
+	<body>
+		<!-- Body section -->
 
-<!-- Body section -->
-
-<div class="grid-container halves" style="margin-top:8rem;">
-	<div>
-		<h1>Open source software from SAS</h1>
-		<p>From data to insights. Faster. Help build the future of AI and analytics with open source tools from <a href="https://www.sas.com/" title="sas.com">SAS</a>.</p>
-		<p><a class="button button-classic" href="https://github.com/sassoftware" title="github.com/sassoftware">View projects</a> <a href="contributor-handbook.html" title="SAS Open Source Contributor Handbook">Contribute →</a></p>
-	</div>
-	<div>
-		<img class="u-img-hero u-hiding" src="images/sas-colors-2.png">
-	</div>
-</div>
-
-<!-- Banded section -->
-
-<div class="divider">
-	<div>
-	<img class="u-img-divider" src="images/standard-section-divider.png">
-	</div>
-</div>
-
-<!-- Body section -->
-
-<div class="grid-container thirds">
-	<div>
-		<h2>Featured projects</h2>
-		<p>Browse some of our most popular open source projects. <a href="https://sassoftware.github.io/contributor-handbook.html" title="SAS Open Source Contributor Handbook">Contributions welcome.</a></p>
-	</div>
-	<div class="boxed">
-		<h6>yj-valid8r</h6>
-		<p>A Go-based tool that validates JSON and YAML files against JSON Schema.</p>
-		<p><a href="https://github.com/sassoftware/yj-valid8r" title="yj-valid8r">Contribute →</a></p>
-	</div>
-	<div class="boxed">
-		<h6>kubethor</h6>
-		<p>A Kubernetes management web application built using Go and React, providing a user-friendly interface to manage and monitor Kubernetes clusters efficiently.</p>
-		<p><a href="https://github.com/sassoftware/kubethor" title="kubethor">Contribute →</a></p>
-	</div>
-	<div class="boxed">
-		<h6>dpmm</h6>
-		<p>A library for synthetic tabular data generation with rich functionality and end-to-end differential privacy guarantees </p>
-		<p><a href="https://github.com/sassoftware/dpmm" title="dpmm">Contribute →</a></p>
-	</div>
-	<div class="boxed">
-		<h6>saspy</h6>
-		<p>A Python interface module to the SAS System. It works with Linux, Windows, and Mainframe SAS as well as with SAS in Viya®.</p>
-		<p><a href="https://github.com/sassoftware/saspy" title="saspy">Contribute →</a></p>
-	</div>
-	<div class="boxed">	
-		<h6>sas-ggdk</h6>
-		<p>The SAS generics library for Go provides packages that leverage generic types to support various common development tasks and patterns.</p>
-		<p><a href="https://github.com/sassoftware/sas-ggdk" title="sas-ggdk">Contribute →</a></p>
-	</div>
-</div>
-
-<!-- Banded section -->
-
-<div class="divider">
-	<div>
-	<img class="u-img-divider" src="images/standard-section-divider.png">
-	</div>
-</div>
-
-<!-- Body section -->
-<div class="grid-container halves" style="margin-bottom:3.3rem;">
-	<div>
-		<h2>Spotlight on trustworthy AI</h2>
-		<p>Artificial intelligence systems designed, developed, and deployed with human-centricity in mind—systems that incorporate appropriate levels of accountability, inclusivity, transparency, completeness, and robustness to promote human agency and prevent human harm. Trustworthy AI aims to ensure safety, reliability, and ethical considerations.</p>
-	</div>
-	<div>
-		<img class="u-half-width" src="images/sas-trustworthy-ai.png">
-	</div>
-</div>
-<div class="grid-container thirds">
-	<div>
-		<h4>Trustworthy AI life cycle</h4>
-		<p>Steps for evaluating and deploying a more trustworthy AI system.</p>
-		<p><a class="button button-classic" href="https://sassoftware.github.io/sas-trustworthy-ai-life-cycle/" title="SAS Trustworthy AI Life Cycle">Read</a> <a href="https://github.com/sassoftware/sas-trustworthy-ai-life-cycle" title="ai-life-cycle">Contribute →</a>
-	</div>
-	<div>
-		<h4>Trustworthy AI examples</h4>
-		<p>Python notebooks and SAS programs that demonstrate key principles of trustworthy AI.</p>
-		<a href="https://github.com/sassoftware/sas-trustworthy-ai-examples" title="sas-trustworthy-ai-examples">Explore →</a>
-	</div>
-	<div>
-		<h4>Learn more</h4>
-		<ul>
-			<li><a href="https://www.sas.com/content/dam/SAS/documents/infographics/2023/en-trustworthy-ai-across-analytics-life-cycle-113583.pdf" title="Trustworthy AI Across the Data and AI Life Cycle">See the handout</a></li>
-			<li><a href="https://www.youtube.com/watch?v=yRiKKSpfT7g" title="Enforcing Trustworthy AI Standards & Best Practices in Analytical Projects">Watch the presentation</a></li>
-			<li><a href="https://communities.sas.com/t5/Trustworthy-AI/bd-p/trustworthy-ai" title="SAS  Trustworthy AI community">Join the conversation</a></li>
-		</ul>
-	</div>
-</div>
-
-<!-- Banded section -->
-
-<div class="divider">
-	<div>
-	<img class="u-img-divider" src="images/standard-section-divider.png">
-	</div>
-</div>
-
-<!-- Body section -->
-
-<div class="grid-container full" style="margin-bottom:3.3rem;">
-	<div>
-		<h2>Open source projects from SAS</h2>
-		<p>Browse the <a href="https://github.com/sassoftware" title="SAS Software organization on GitHub">SAS Software organization on GitHub</a>. Read the <a href="contributor-handbook.html" title="SAS Open Source Contributor Handbook">SAS Open Source Contributor Handbook</a> to get started.</p>
-	</div>
-</div>
-
-<div class="grid-container halves">
-	<div id="just-launched">
-		<p class="u-badge">New</p>
-		<h3>Just launched</h3>
-	</div>
-	<div class="inverted inverted-blue" id="recently-updated">
-		<h3>Recently updated</h3>
-	</div>
-</div>
-
-<!-- Banded section -->
-
-<div class="divider">
-	<div>
-	<img class="u-img-divider" src="images/standard-section-divider.png">
-	</div>
-</div>
-
-<!-- Body section -->
-
-<div class="grid-container halves">
-	<div class="inverted inverted-dark">
-		<h3>Automated SAS® Viya® cloud deployment.</h3>
-		<p>Open source Terraform configuration files for provisioning SAS® Viya® resources on public clouds.</p>
-		<h4>Deploy now</h4>
-		<ul>
-			<li><a href="https://github.com/sassoftware/viya4-iac-gcp" title="viya4-iac-gcp">Google Cloud</a></li>
-			<li><a href="https://github.com/sassoftware/viya4-iac-azure" title="viya4-iac-azure">Microsoft Azure Cloud</a></li>
-			<li><a href="https://github.com/sassoftware/viya4-iac-aws" title="viya4-iac-aws">Amazon Web Services</a></li>
-		</ul>
-	</div>
-	<div class="shapes u-hiding">
-		<div class="shape blade">
+		<div class="grid-container halves" style="margin-top: 8rem">
+			<div>
+				<h1>Open source software from SAS</h1>
+				<p>
+					From data to insights. Faster. Help build the future of AI
+					and analytics with open source tools from
+					<a href="https://www.sas.com/" title="sas.com">SAS</a>.
+				</p>
+				<p>
+					<a
+						class="button button-classic"
+						href="https://github.com/sassoftware"
+						title="github.com/sassoftware"
+						>View projects</a
+					>
+					<a
+						href="contributor-handbook.html"
+						title="SAS Open Source Contributor Handbook"
+						>Contribute →</a
+					>
+				</p>
+			</div>
+			<div>
+				<img
+					class="u-img-hero u-hiding"
+					src="images/sas-colors-2.png"
+				/>
+			</div>
 		</div>
-		<div class="shape semicircle-up-dark">
+
+		<!-- Banded section -->
+
+		<div class="divider">
+			<div>
+				<img
+					class="u-img-divider"
+					src="images/standard-section-divider.png"
+				/>
+			</div>
 		</div>
-		<div class="shape circle-transparent">
+
+		<!-- Body section -->
+
+		<div class="grid-container thirds">
+			<div>
+				<h2>Featured projects</h2>
+				<p>
+					Browse some of our most popular open source projects.
+					<a
+						href="https://sassoftware.github.io/contributor-handbook.html"
+						title="SAS Open Source Contributor Handbook"
+						>Contributions welcome.</a
+					>
+				</p>
+			</div>
+			<div class="carded">
+				<h6>yj-valid8r</h6>
+				<p>
+					A Go-based tool that validates JSON and YAML files against
+					JSON Schema.
+				</p>
+				<p>
+					<a
+						href="https://github.com/sassoftware/yj-valid8r"
+						title="yj-valid8r"
+						>Contribute →</a
+					>
+				</p>
+			</div>
+			<div class="carded">
+				<h6>kubethor</h6>
+				<p>
+					A Kubernetes management web application built using Go and
+					React, providing a user-friendly interface to manage and
+					monitor Kubernetes clusters efficiently.
+				</p>
+				<p>
+					<a
+						href="https://github.com/sassoftware/kubethor"
+						title="kubethor"
+						>Contribute →</a
+					>
+				</p>
+			</div>
+			<div class="carded">
+				<h6>dpmm</h6>
+				<p>
+					A library for synthetic tabular data generation with rich
+					functionality and end-to-end differential privacy
+					guarantees
+				</p>
+				<p>
+					<a href="https://github.com/sassoftware/dpmm" title="dpmm"
+						>Contribute →</a
+					>
+				</p>
+			</div>
+			<div class="carded">
+				<h6>saspy</h6>
+				<p>
+					A Python interface module to the SAS System. It works with
+					Linux, Windows, and Mainframe SAS as well as with SAS in
+					Viya®.
+				</p>
+				<p>
+					<a
+						href="https://github.com/sassoftware/saspy"
+						title="saspy"
+						>Contribute →</a
+					>
+				</p>
+			</div>
+			<div class="carded">
+				<h6>sas-ggdk</h6>
+				<p>
+					The SAS generics library for Go provides packages that
+					leverage generic types to support various common
+					development tasks and patterns.
+				</p>
+				<p>
+					<a
+						href="https://github.com/sassoftware/sas-ggdk"
+						title="sas-ggdk"
+						>Contribute →</a
+					>
+				</p>
+			</div>
 		</div>
-	</div>
-</div>
 
-<!-- Banded section -->
+		<!-- Banded section -->
 
-<div class="divider">
-	<div>
-	<img class="u-img-divider" src="images/standard-section-divider.png">
-	</div>
-</div>
-
-<!-- Body section -->
-
-<div class="grid-container halves" style="margin-bottom:2.5rem;">
-	<div>
-		<h2>SAS® Viya® Workbench</h2>
-		<p>Purpose-built for developers and modelers, SAS® Viya® Workbench is a self-service, on-demand compute environment for analytical development, including building AI and machine learning models for better data analysis.</p>
-		<p><a class="button button-classic" href="https://www.sas.com/en_us/software/viya/workbench.html" title="SAS Viya Workbench">Learn more</a></p>
-	</div>
-	<div>
-		<img class="u-img-border" src="images/sas-viya-workbench.png">
-	</div>
-</div>
-	<div class="grid-container thirds">
-	<div>
-		<h4>View examples</h4>
-		<p>See SAS and Python code examples for use with Workbench.</p>
-		<p><a href="https://github.com/sassoftware/sas-viya-workbench-examples" title="sas-viya-workbench-examples">Explore →</a></p>
-	</div>
-	<div>
-		<h4>Run demos</h4>
-		<p>Experiment with comprehensive, industry-specific demonstrations of Workbench capabilities.</p>
-		<p><a href="https://github.com/sassoftware/sas-viya-workbench-demos" title="sas-viya-workbench-demos">Explore →</a></p>
-	</div>
-	<div>
-		<h4>Check compatibility</h4>
-		<p>Determine whether your third-party, open source dependencies are compatible with Workbench.</p>
-		<p><a href="https://github.com/sassoftware/sas-viya-workbench-compatibility" title="sas-viya-workbench-compatibility">Explore →</a></p>
-	</div>
-</div>
-
-<!-- Banded section -->
-
-<div class="band gray-band">
-	<div>
-		<h2>SAS® Studio custom steps</h2>
-        <p class="u-embiggen">Create custom interfaces for SAS® Studio on SAS® Viya®. Customize, save, and share with other users at your site.</p>
-		<p><a class="button button-inverted" href="https://github.com/sassoftware/sas-studio-custom-steps" title="sas-studio-custom-steps">Create now</a></p>
-	</div>
-</div>
-
-<!-- Body section -->
-
-<div class="grid-container halves" style="margin-bottom:2.5rem;">
-	<div>
-		<h2>SAS® Customer Intelligence 360. Supercharged.</h2>
-		<p>Construct and manage customer journeys across all engagement channels in a flexible and secure manner. Open source resources from SAS help you do more.</p>
-		<p><a class="button button-classic" href="https://developer.sas.com/solutions/customer_intelligence_360" title="SAS Customer Intelligence 360">Start here</a> <a href="https://github.com/orgs/sassoftware/repositories?q=ci360" title="ci360 on GitHub">Browse projects →</a></p>
-	</div>
-	<div>
-		<img src="images/sas-ci360.png">
-	</div>
-</div>
-<div class="grid-container thirds">
-	<div>
-		<h6>ci360-sas-tools</h6>
-		<p>A collection of SAS macros designed to exercise SAS CI360 APIs that download data, which is in turn used for analysis and insight.</p>
-		<p><a href="https://github.com/sassoftware/ci360-sas-tools" title="ci360-sas-tools">Explore →</a></p>
-	</div>
-	<div>
-		<h6>ci360-extensions</h6>
-		<p>Connectors, agents, and other assets ready to be used to enhance the capabilities of SAS CI360 and connect to third-party services.</p>
-		<p><a href="https://github.com/sassoftware/ci360-extensions" title="ci360-extensions">Explore →</a></p>
-	</div>
-	<div>
-		<h6>ci360-connectors</h6>
-		<p>Provides an infrastructure to integrate SAS CI360 applications with other applications.</p>
-		<p><a href="https://github.com/sassoftware/ci360-connectors" title="ci360-connectors">Explore →</a></p>
-	</div>
-</div>
-
-<!-- Banded section -->
-
-<div class="divider">
-	<div>
-	<img class="u-img-divider" src="images/standard-section-divider.png">
-	</div>
-</div>
-
-<!-- Body section -->
-
-<div class="grid-container halves">
-	<div>
-		<img class="u-img-border" src="images/vs-code.png">
-	</div>
-	<div>
-		<h2>SAS extension for VS Code</h2>
-		<p>The SAS Extension for Visual Studio Code provides support for the SAS language, including features such as SAS syntax highlighting, code completion, hover help, code folding, outline, SAS code snippets and run SAS code.</p>
-		<p><a class="button button-classic" href="https://github.com/sassoftware/vscode-sas-extension" title="vscode-sas-extension">Install</a>
-		<a href="https://sassoftware.github.io/vscode-sas-extension/">Read more →</a></p>
-	</div>
-</div>
-
-<!-- Banded section -->
-
-<div class="band blue-band">
-	<div>
-		<h2>SAS® Airflow provider</h2>
-        <p class="u-embiggen"><a href="https://airflow.apache.org/" title="Apache Airflow">Apache Airflow</a> provider for creating tasks in Airflow. Execute SAS Studio flows and jobs.</p>
-		<p><a class="button button-inverted" href="https://github.com/sassoftware/sas-airflow-provider" title="sas-airflow-provider">Get now</a></p>
-	</div>
-</div>
-
-<!-- Body section -->
-
-<div class="grid-container full" style="margin-bottom:2.5rem;">
-	<div>
-		<h2>SAS education resources</h2>
-		<p>Openly licensed materials to support your SAS education journey.</p>
-	</div>
-</div>
-<div class="grid-container thirds">
-	<div>	
-		<h3>Tutorials</h3>
-		<p>A collection of hands-on instructions, examples, data, and tutorials provided by SAS Education to support your SAS training journey.</p>
-		<p><a href="https://github.com/sassoftware/sas-education" title="sas-education">Get started →</a><p>
-	</div>
-	<div>
-		<h3>Code examples</h3>
-		<p>A library of SAS code examples. Programs can be copied and executed in your SAS execution environment of choice.</p>
-		<p><a href="https://github.com/sassoftware/sas-code-examples" title="sas-code-examples">Get started →</a><p>
-	</div>
-	<div class="shapes u-hiding">
-		<div class="shape circle">
+		<div class="divider">
+			<div>
+				<img
+					class="u-img-divider"
+					src="images/standard-section-divider.png"
+				/>
+			</div>
 		</div>
-		<div class="shape circle-dark">
+
+		<!-- Body section -->
+		<div class="grid-container halves" style="margin-bottom: 3.3rem">
+			<div>
+				<h2>Spotlight on trustworthy AI</h2>
+				<p>
+					Artificial intelligence systems designed, developed, and
+					deployed with human-centricity in mind—systems that
+					incorporate appropriate levels of accountability,
+					inclusivity, transparency, completeness, and robustness to
+					promote human agency and prevent human harm. Trustworthy
+					AI aims to ensure safety, reliability, and ethical
+					considerations.
+				</p>
+			</div>
+			<div>
+				<img
+					class="u-half-width"
+					src="images/sas-trustworthy-ai.png"
+				/>
+			</div>
 		</div>
-		<div class="shape circle-transparent">
+		<div class="grid-container thirds">
+			<div>
+				<h4>Trustworthy AI life cycle</h4>
+				<p>
+					Steps for evaluating and deploying a more trustworthy AI
+					system.
+				</p>
+				<p>
+					<a
+						class="button button-classic"
+						href="https://sassoftware.github.io/sas-trustworthy-ai-life-cycle/"
+						title="SAS Trustworthy AI Life Cycle"
+						>Read</a
+					>
+					<a
+						href="https://github.com/sassoftware/sas-trustworthy-ai-life-cycle"
+						title="ai-life-cycle"
+						>Contribute →</a
+					>
+				</p>
+			</div>
+			<div>
+				<h4>Trustworthy AI examples</h4>
+				<p>
+					Python notebooks and SAS programs that demonstrate key
+					principles of trustworthy AI.
+				</p>
+				<a
+					href="https://github.com/sassoftware/sas-trustworthy-ai-examples"
+					title="sas-trustworthy-ai-examples"
+					>Explore →</a
+				>
+			</div>
+			<div>
+				<h4>Learn more</h4>
+				<ul>
+					<li>
+						<a
+							href="https://www.sas.com/content/dam/SAS/documents/infographics/2023/en-trustworthy-ai-across-analytics-life-cycle-113583.pdf"
+							title="Trustworthy AI Across the Data and AI Life Cycle"
+							>See the handout</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.youtube.com/watch?v=yRiKKSpfT7g"
+							title="Enforcing Trustworthy AI Standards & Best Practices in Analytical Projects"
+							>Watch the presentation</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://communities.sas.com/t5/Trustworthy-AI/bd-p/trustworthy-ai"
+							title="SAS  Trustworthy AI community"
+							>Join the conversation</a
+						>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</div>
-</div>
 
-<!-- Banded section -->
+		<!-- Banded section -->
 
-<div class="divider">
-	<div>
-	<img class="u-img-divider" src="images/standard-section-divider.png">
-	</div>
-</div>
+		<div class="divider">
+			<div>
+				<img
+					class="u-img-divider"
+					src="images/standard-section-divider.png"
+				/>
+			</div>
+		</div>
 
-<!-- Body section -->
+		<!-- Body section -->
 
-<div class="grid-container halves">
-	<div>
-		<img src="images/sas-developers-logo-brackets-2color.png">
-	</div>
-	<div>
-		<h2>For SAS programmers</h2>
-		<p>Build applications that integrate the SAS AI and analytics platform with open source tools and frameworks.</p>
-		<p><a class="button button-classic" href="https://developer.sas.com/" title="developer.sas.com">Get started</a></p>
-	</div>
-</div>
+		<div class="grid-container full" style="margin-bottom: 3.3rem">
+			<div>
+				<h2>Open source projects from SAS</h2>
+				<p>
+					Browse the
+					<a
+						href="https://github.com/sassoftware"
+						title="SAS Software organization on GitHub"
+						>SAS Software organization on GitHub</a
+					>. Read the
+					<a
+						href="contributor-handbook.html"
+						title="SAS Open Source Contributor Handbook"
+						>SAS Open Source Contributor Handbook</a
+					>
+					to get started.
+				</p>
+			</div>
+		</div>
 
-<!-- Banded section -->
+		<div class="grid-container halves">
+			<div id="just-launched">
+				<p class="u-badge">New</p>
+				<h3>Just launched</h3>
+			</div>
+			<div class="inverted inverted-blue" id="recently-updated">
+				<h3>Recently updated</h3>
+			</div>
+		</div>
 
-<div class="divider">
-	<div>
-	<img class="u-img-divider" src="images/standard-section-divider.png">
-	</div>
-</div>
+		<!-- Banded section -->
 
-<!-- Footer section -->
+		<div class="divider">
+			<div>
+				<img
+					class="u-img-divider"
+					src="images/standard-section-divider.png"
+				/>
+			</div>
+		</div>
 
-<div class="footer">
-	<p>Copyright © 2025 <a href="https://www.sas.com/" title="sas.com">SAS Institute Inc.</a> All Rights Reserved.</p>
-	<ul>
-		<li><a href="https://github.com/sassoftware/sassoftware.github.io" title="sasssoftware.github.io">Site Code</a></li>
-		<li><a href="https://github.com/sassoftware" title="github.com/sassoftware">SAS on GitHub</a></li>
-		<li><a href="https://www.sas.com/en_us/company-information/why-sas.html" title="sas.com">About SAS</a></li>
-	</ul>
-</div>
+		<!-- Body section -->
 
-<!--Scripts -->
+		<div class="grid-container halves">
+			<div class="inverted inverted-dark">
+				<h3>Automated SAS® Viya® cloud deployment.</h3>
+				<p>
+					Open source Terraform configuration files for provisioning
+					SAS® Viya® resources on public clouds.
+				</p>
+				<h4>Deploy now</h4>
+				<ul>
+					<li>
+						<a
+							href="https://github.com/sassoftware/viya4-iac-gcp"
+							title="viya4-iac-gcp"
+							>Google Cloud</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://github.com/sassoftware/viya4-iac-azure"
+							title="viya4-iac-azure"
+							>Microsoft Azure Cloud</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://github.com/sassoftware/viya4-iac-aws"
+							title="viya4-iac-aws"
+							>Amazon Web Services</a
+						>
+					</li>
+				</ul>
+			</div>
+			<div class="shapes u-hiding">
+				<div class="shape blade"></div>
+				<div class="shape semicircle-up-dark"></div>
+				<div class="shape circle-transparent"></div>
+			</div>
+		</div>
 
-<script type="text/javascript" src="js/data.js"></script>
-<script type="text/javascript">
-    function renderRepos(arr, tag, count) {
-    const list = document.getElementById(tag);
-    function makeElem(arrItem, arrIndex) {
-        let p = document.createElement('p');
-        let name = arrItem['name'];
-        let description = arrItem['description'];
+		<!-- Banded section -->
 
-        /*<p><a href="PROJECT_URL" title="PROJECT_NAME">PROJECT_NAME</a><br />PROJECT_DESCRPTION</p>*/
+		<div class="divider">
+			<div>
+				<img
+					class="u-img-divider"
+					src="images/standard-section-divider.png"
+				/>
+			</div>
+		</div>
 
-        p.innerHTML = `<p><a href="https://github.com/sassoftware/${name}" title="${name}">${name}</a><br />${description}</p>`;
-        console.log(arrItem);
-        return p;
-    }
-    let i = 0;
-    arr.forEach((item, index) => {
-        if (i < count){
-        try {
-            const listElement = makeElem(item, index);
-            list.append(listElement);
-            console.log("*");
-        } catch (Error) {
-            console.log(Error);
-        }}
-        i += 1;
-    });
-}
+		<!-- Body section -->
 
-data.sort(function(a,b){ 
-if ( a['created_at'] < b['created_at'] )
-{
-	return 1;
-}
-return -1;
-});
-renderRepos(data, "just-launched", 4);
+		<div class="grid-container halves" style="margin-bottom: 2.5rem">
+			<div>
+				<h2>SAS® Viya® Workbench</h2>
+				<p>
+					Purpose-built for developers and modelers, SAS® Viya®
+					Workbench is a self-service, on-demand compute environment
+					for analytical development, including building AI and
+					machine learning models for better data analysis.
+				</p>
+				<p>
+					<a
+						class="button button-classic"
+						href="https://www.sas.com/en_us/software/viya/workbench.html"
+						title="SAS Viya Workbench"
+						>Learn more</a
+					>
+				</p>
+			</div>
+			<div>
+				<img
+					class="u-img-border"
+					src="images/sas-viya-workbench.png"
+				/>
+			</div>
+		</div>
+		<div class="grid-container thirds">
+			<div>
+				<h4>View examples</h4>
+				<p>
+					See SAS and Python code examples for use with Workbench.
+				</p>
+				<p>
+					<a
+						href="https://github.com/sassoftware/sas-viya-workbench-examples"
+						title="sas-viya-workbench-examples"
+						>Explore →</a
+					>
+				</p>
+			</div>
+			<div>
+				<h4>Run demos</h4>
+				<p>
+					Experiment with comprehensive, industry-specific
+					demonstrations of Workbench capabilities.
+				</p>
+				<p>
+					<a
+						href="https://github.com/sassoftware/sas-viya-workbench-demos"
+						title="sas-viya-workbench-demos"
+						>Explore →</a
+					>
+				</p>
+			</div>
+			<div>
+				<h4>Check compatibility</h4>
+				<p>
+					Determine whether your third-party, open source
+					dependencies are compatible with Workbench.
+				</p>
+				<p>
+					<a
+						href="https://github.com/sassoftware/sas-viya-workbench-compatibility"
+						title="sas-viya-workbench-compatibility"
+						>Explore →</a
+					>
+				</p>
+			</div>
+		</div>
 
-data.sort(function(a,b){ 
-if ( a['pushed_at'] < b['pushed_at'] )
-{
-	return 1;
-}
-return -1;
-});
-renderRepos(data, "recently-updated", 4);
+		<!-- Banded section -->
 
-data.sort(function(a,b){ 
-if ( a['forks_count'] < b['forks_count'] )
-{
-	return 1;
-}
-return -1;
-});
-renderRepos(data, "most-forked", 4);
+		<div class="band gray-band">
+			<div>
+				<h2>SAS® Studio custom steps</h2>
+				<p class="u-embiggen">
+					Create custom interfaces for SAS® Studio on SAS® Viya®.
+					Customize, save, and share with other users at your site.
+				</p>
+				<p>
+					<a
+						class="button button-inverted"
+						href="https://github.com/sassoftware/sas-studio-custom-steps"
+						title="sas-studio-custom-steps"
+						>Create now</a
+					>
+				</p>
+			</div>
+		</div>
 
-</script>
+		<!-- Body section -->
 
-<!-- Document end-->
-</body>
+		<div class="grid-container halves" style="margin-bottom: 2.5rem">
+			<div>
+				<h2>SAS® Customer Intelligence 360. Supercharged.</h2>
+				<p>
+					Construct and manage customer journeys across all
+					engagement channels in a flexible and secure manner. Open
+					source resources from SAS help you do more.
+				</p>
+				<p>
+					<a
+						class="button button-classic"
+						href="https://developer.sas.com/solutions/customer_intelligence_360"
+						title="SAS Customer Intelligence 360"
+						>Start here</a
+					>
+					<a
+						href="https://github.com/orgs/sassoftware/repositories?q=ci360"
+						title="ci360 on GitHub"
+						>Browse projects →</a
+					>
+				</p>
+			</div>
+			<div>
+				<img src="images/sas-ci360.png" />
+			</div>
+		</div>
+		<div class="grid-container thirds">
+			<div>
+				<h6>ci360-sas-tools</h6>
+				<p>
+					A collection of SAS macros designed to exercise SAS CI360
+					APIs that download data, which is in turn used for
+					analysis and insight.
+				</p>
+				<p>
+					<a
+						href="https://github.com/sassoftware/ci360-sas-tools"
+						title="ci360-sas-tools"
+						>Explore →</a
+					>
+				</p>
+			</div>
+			<div>
+				<h6>ci360-extensions</h6>
+				<p>
+					Connectors, agents, and other assets ready to be used to
+					enhance the capabilities of SAS CI360 and connect to
+					third-party services.
+				</p>
+				<p>
+					<a
+						href="https://github.com/sassoftware/ci360-extensions"
+						title="ci360-extensions"
+						>Explore →</a
+					>
+				</p>
+			</div>
+			<div>
+				<h6>ci360-connectors</h6>
+				<p>
+					Provides an infrastructure to integrate SAS CI360
+					applications with other applications.
+				</p>
+				<p>
+					<a
+						href="https://github.com/sassoftware/ci360-connectors"
+						title="ci360-connectors"
+						>Explore →</a
+					>
+				</p>
+			</div>
+		</div>
+
+		<!-- Banded section -->
+
+		<div class="divider">
+			<div>
+				<img
+					class="u-img-divider"
+					src="images/standard-section-divider.png"
+				/>
+			</div>
+		</div>
+
+		<!-- Body section -->
+
+		<div class="grid-container halves">
+			<div>
+				<img class="u-img-border" src="images/vs-code.png" />
+			</div>
+			<div>
+				<h2>SAS extension for VS Code</h2>
+				<p>
+					The SAS Extension for Visual Studio Code provides support
+					for the SAS language, including features such as SAS
+					syntax highlighting, code completion, hover help, code
+					folding, outline, SAS code snippets and run SAS code.
+				</p>
+				<p>
+					<a
+						class="button button-classic"
+						href="https://github.com/sassoftware/vscode-sas-extension"
+						title="vscode-sas-extension"
+						>Install</a
+					>
+					<a
+						href="https://sassoftware.github.io/vscode-sas-extension/"
+						>Read more →</a
+					>
+				</p>
+			</div>
+		</div>
+
+		<!-- Banded section -->
+
+		<div class="band blue-band">
+			<div>
+				<h2>SAS® Airflow provider</h2>
+				<p class="u-embiggen">
+					<a
+						href="https://airflow.apache.org/"
+						title="Apache Airflow"
+						>Apache Airflow</a
+					>
+					provider for creating tasks in Airflow. Execute SAS Studio
+					flows and jobs.
+				</p>
+				<p>
+					<a
+						class="button button-inverted"
+						href="https://github.com/sassoftware/sas-airflow-provider"
+						title="sas-airflow-provider"
+						>Get now</a
+					>
+				</p>
+			</div>
+		</div>
+
+		<!-- Body section -->
+
+		<div class="grid-container full" style="margin-bottom: 2.5rem">
+			<div>
+				<h2>SAS education resources</h2>
+				<p>
+					Openly licensed materials to support your SAS education
+					journey.
+				</p>
+			</div>
+		</div>
+		<div class="grid-container thirds">
+			<div>
+				<h3>Tutorials</h3>
+				<p>
+					A collection of hands-on instructions, examples, data, and
+					tutorials provided by SAS Education to support your SAS
+					training journey.
+				</p>
+				<p>
+					<a
+						href="https://github.com/sassoftware/sas-education"
+						title="sas-education"
+						>Get started →</a
+					>
+				</p>
+				<p></p>
+			</div>
+			<div>
+				<h3>Code examples</h3>
+				<p>
+					A library of SAS code examples. Programs can be copied and
+					executed in your SAS execution environment of choice.
+				</p>
+				<p>
+					<a
+						href="https://github.com/sassoftware/sas-code-examples"
+						title="sas-code-examples"
+						>Get started →</a
+					>
+				</p>
+				<p></p>
+			</div>
+			<div class="shapes u-hiding">
+				<div class="shape circle"></div>
+				<div class="shape circle-dark"></div>
+				<div class="shape circle-transparent"></div>
+			</div>
+		</div>
+
+		<!-- Banded section -->
+
+		<div class="divider">
+			<div>
+				<img
+					class="u-img-divider"
+					src="images/standard-section-divider.png"
+				/>
+			</div>
+		</div>
+
+		<!-- Body section -->
+
+		<div class="grid-container halves">
+			<div>
+				<img src="images/sas-developers-logo-brackets-2color.png" />
+			</div>
+			<div>
+				<h2>For SAS programmers</h2>
+				<p>
+					Build applications that integrate the SAS AI and analytics
+					platform with open source tools and frameworks.
+				</p>
+				<p>
+					<a
+						class="button button-classic"
+						href="https://developer.sas.com/"
+						title="developer.sas.com"
+						>Get started</a
+					>
+				</p>
+			</div>
+		</div>
+
+		<!-- Banded section -->
+
+		<div class="divider">
+			<div>
+				<img
+					class="u-img-divider"
+					src="images/standard-section-divider.png"
+				/>
+			</div>
+		</div>
+
+		<!-- Footer section -->
+
+		<div class="footer">
+			<p>
+				Copyright © 2025
+				<a href="https://www.sas.com/" title="sas.com"
+					>SAS Institute Inc.</a
+				>
+				All Rights Reserved.
+			</p>
+			<ul>
+				<li>
+					<a
+						href="https://github.com/sassoftware/sassoftware.github.io"
+						title="sasssoftware.github.io"
+						>Site Code</a
+					>
+				</li>
+				<li>
+					<a
+						href="https://github.com/sassoftware"
+						title="github.com/sassoftware"
+						>SAS on GitHub</a
+					>
+				</li>
+				<li>
+					<a
+						href="https://www.sas.com/en_us/company-information/why-sas.html"
+						title="sas.com"
+						>About SAS</a
+					>
+				</li>
+			</ul>
+		</div>
+
+		<!--Scripts -->
+
+		<script type="text/javascript" src="js/data.js"></script>
+		<script type="text/javascript">
+			function renderRepos(arr, tag, count) {
+				const list = document.getElementById(tag);
+				function makeElem(arrItem, arrIndex) {
+					let p = document.createElement("p");
+					let name = arrItem["name"];
+					let description = arrItem["description"];
+
+					/*<p><a href="PROJECT_URL" title="PROJECT_NAME">PROJECT_NAME</a><br />PROJECT_DESCRPTION</p>*/
+
+					p.innerHTML = `<p><a href="https://github.com/sassoftware/${name}" title="${name}">${name}</a><br />${description}</p>`;
+					console.log(arrItem);
+					return p;
+				}
+				let i = 0;
+				arr.forEach((item, index) => {
+					if (i < count) {
+						try {
+							const listElement = makeElem(item, index);
+							list.append(listElement);
+							console.log("*");
+						} catch (Error) {
+							console.log(Error);
+						}
+					}
+					i += 1;
+				});
+			}
+
+			data.sort(function (a, b) {
+				if (a["created_at"] < b["created_at"]) {
+					return 1;
+				}
+				return -1;
+			});
+			renderRepos(data, "just-launched", 4);
+
+			data.sort(function (a, b) {
+				if (a["pushed_at"] < b["pushed_at"]) {
+					return 1;
+				}
+				return -1;
+			});
+			renderRepos(data, "recently-updated", 4);
+
+			data.sort(function (a, b) {
+				if (a["forks_count"] < b["forks_count"]) {
+					return 1;
+				}
+				return -1;
+			});
+			renderRepos(data, "most-forked", 4);
+		</script>
+
+		<!-- Document end-->
+	</body>
 </html>
