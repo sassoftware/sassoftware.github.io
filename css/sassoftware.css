@@ -464,7 +464,7 @@ input[type="submit"].button-inverted,
 input[type="reset"].button-inverted,
 input[type="button"].button-inverted {
 color: var(--text-color-inverted);
-background-color: transparent);
+background-color: transparent;
 border-color: var(--button-inverted-color); 
 text-decoration: none !important;
 }
