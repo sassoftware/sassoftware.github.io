@@ -23,7 +23,7 @@ html {
 	--theme-hue: #0766D1;							/* SAS blue */
 	--accent-hue: #4398F9;							/* SAS medium blue */
 	--darker-hue: #032954;							/* SAS midnight blue */
-	--lighter-hue: #C4DEFD;							/* SAS light blue */
+	--lighter-hue: #C4DEFD;						/* SAS light blue */
 	--gray-hue: #7E889A;							/* SAS slate */
 
 	--text-color-richer: #032954;					/* SAS midnight blue */
@@ -37,11 +37,11 @@ html {
 	--button-inverted-accent: #4398F9;				/* SAS slate*/
 
 	--border-color: #0766D1;						/* SAS blue */
-	--border-color-softer: #C4DEFD;					/* SAS light blue */
-	--border-color-richer: #032954;					/* SAS midnight blue */
+	--border-color-softer: #C4DEFD;				/* SAS light blue */
+	--border-color-richer: #032954;				/* SAS midnight blue */
 	
 	--background-color: white;						/* SAS white */
-	--background-color-softer: #C4DEFD;				/* SAS light blue */
+	--background-color-softer: #C4DEFD;			/* SAS light blue */
 	--code-background: white;						/* SAS white */
 	--image-border: #7E889A;						/* SAS slate */
 }
