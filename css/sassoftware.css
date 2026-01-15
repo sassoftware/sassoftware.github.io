@@ -195,6 +195,9 @@ h6 { font-size: 1.7rem; line-height: 1.6; margin-bottom: 0.6rem; font-weight: bo
 .inverted-blue {
 	background-color: var(--theme-hue);
 }
+.inverted-light {
+	background-color: var(--accent-hue);
+}
 .inverted-dark {
 	background-color: var(--darker-hue);
 }
