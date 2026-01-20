@@ -226,22 +226,34 @@ h6 { font-size: 1.7rem; line-height: 1.6; margin-bottom: 0.6rem; font-weight: bo
 }
 .band {
 	text-align: center;
-	color: var(--text-color-inverted);
 	margin: 15rem 0rem;
 	padding: 7rem 10rem 5rem 10rem;
 }
 .blue-band {
 	background-color: var(--theme-hue);
+	color: var(--text-color-inverted);
 }
 .dark-band {
 	background-color: var(--darker-hue);
+	color: var(--text-color-inverted);
 }
 .gray-band {
 	background-color: var(--gray-hue);
+	color: var(--text-color-inverted);
 }
 .transparent-band {
 	background-color: var(--background-color); 
 	color: var(--text-color-normal);
+}
+.carded-band {
+	background-color: var(--background-color);
+	color: var(--text-color-normal);
+	border: 1px solid var(--border-color);
+	border-radius: .5rem;
+	padding: 5.5rem 3.5rem 2.5rem 3.5rem;
+	margin: 15rem 6.5rem;
+	box-sizing: border-box;
+	box-shadow: 1.7rem 1.7rem .1rem 0 var(--background-color-softer);
 }
 
 /* Links
