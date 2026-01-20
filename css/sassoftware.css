@@ -23,11 +23,11 @@ html {
 	--theme-hue: #0766D1;							/* SAS blue */
 	--accent-hue: #4398F9;							/* SAS medium blue */
 	--darker-hue: #032954;							/* SAS midnight blue */
-	--lighter-hue: #C4DEFD;							/* SAS light blue */
+	--lighter-hue: #C4DEFD;						/* SAS light blue */
 	--gray-hue: #7E889A;							/* SAS slate */
 
 	--text-color-richer: #032954;					/* SAS midnight blue */
-	--text-color-normal: black;						/* SAS black */
+	--text-color-normal: black;					/* SAS black */
 	--text-color-softer: #7E889A;					/* SAS slate */
 	--text-color-inverted: white;					/* SAS white */
 
@@ -37,11 +37,11 @@ html {
 	--button-inverted-accent: #4398F9;				/* SAS slate*/
 
 	--border-color: #0766D1;						/* SAS blue */
-	--border-color-softer: #C4DEFD;					/* SAS light blue */
-	--border-color-richer: #032954;					/* SAS midnight blue */
+	--border-color-softer: #C4DEFD;				/* SAS light blue */
+	--border-color-richer: #032954;				/* SAS midnight blue */
 	
 	--background-color: white;						/* SAS white */
-	--background-color-softer: #C4DEFD;				/* SAS light blue */
+	--background-color-softer: #C4DEFD;			/* SAS light blue */
 	--code-background: white;						/* SAS white */
 	--image-border: #7E889A;						/* SAS slate */
 }
@@ -195,6 +195,9 @@ h6 { font-size: 1.7rem; line-height: 1.6; margin-bottom: 0.6rem; font-weight: bo
 .inverted-blue {
 	background-color: var(--theme-hue);
 }
+.inverted-light {
+	background-color: var(--accent-hue);
+}
 .inverted-dark {
 	background-color: var(--darker-hue);
 }
@@ -209,7 +212,7 @@ h6 { font-size: 1.7rem; line-height: 1.6; margin-bottom: 0.6rem; font-weight: bo
 }
 .carded {
 	border: 1px solid var(--border-color);
-	border-radius: 1.5rem;
+	border-radius: .5rem;
 	padding: 5.5rem 3.5rem 2.5rem 3.5rem;
 	background-color: var(--background-color);
 	box-sizing: border-box;
@@ -223,22 +226,34 @@ h6 { font-size: 1.7rem; line-height: 1.6; margin-bottom: 0.6rem; font-weight: bo
 }
 .band {
 	text-align: center;
-	color: var(--text-color-inverted);
 	margin: 15rem 0rem;
 	padding: 7rem 10rem 5rem 10rem;
 }
 .blue-band {
 	background-color: var(--theme-hue);
+	color: var(--text-color-inverted);
 }
 .dark-band {
 	background-color: var(--darker-hue);
+	color: var(--text-color-inverted);
 }
 .gray-band {
 	background-color: var(--gray-hue);
+	color: var(--text-color-inverted);
 }
 .transparent-band {
 	background-color: var(--background-color); 
 	color: var(--text-color-normal);
+}
+.carded-band {
+	background-color: var(--background-color);
+	color: var(--text-color-normal);
+	border: 1px solid var(--border-color);
+	border-radius: .5rem;
+	padding: 5.5rem 3.5rem 2.5rem 3.5rem;
+	margin: 15rem 6.5rem;
+	box-sizing: border-box;
+	box-shadow: 1.7rem 1.7rem .1rem 0 var(--background-color-softer);
 }
 
 /* Links
@@ -464,7 +479,7 @@ input[type="submit"].button-inverted,
 input[type="reset"].button-inverted,
 input[type="button"].button-inverted {
 color: var(--text-color-inverted);
-background-color: transparent);
+background-color: transparent;
 border-color: var(--button-inverted-color); 
 text-decoration: none !important;
 }
@@ -661,16 +676,16 @@ td:last-child {
 	font-size: 85%;
 }
 .u-badge {
-	color: var(--accent-hue);
-	letter-spacing: .13rem;
+	color: white;
+	background-color: var(--theme-hue);
+	letter-spacing: .15rem;
 	text-transform: uppercase;
 	font-size: 50%;
 	font-weight: bolder;
 	border: 1px solid var(--accent-hue);
 	border-radius: .5rem;
-	padding: .75rem;
+	padding: 1rem;
 	display: inline-block;
-	box-shadow: .3rem .3rem .1rem;
 }
 .u-img-hero {
 	max-width: 80%;
