@@ -163,14 +163,11 @@ h6 { font-size: 1.7rem; line-height: 1.6; margin-bottom: 0.6rem; font-weight: bo
 	border-radius: .5rem; 
 }
 .header {
-	background-color: var(--theme-hue);
-	border-top: 2.5rem double var(--border-color-softer);
-	border-bottom: 2.5rem double var(--border-color-softer);
-	outline: 2.5rem double var(--border-color-richer);
+	padding: 5.5rem 3.5rem 2.5rem 3.5rem;
 	text-align: center;
-	color: var(--text-color-inverted);
+	color: var(--theme-hue);
 	padding: 4rem 8rem 4rem 8rem;
-	margin: 5rem 0rem 15rem 0rem;
+	margin: 0rem 0rem 15rem 0rem;
 }
 .footer {
 	background-color: var(--theme-hue);
