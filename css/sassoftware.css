@@ -33,7 +33,7 @@ html {
 
 	--button-primary-color: #0766D1;				/* SAS blue */
 	--button-primary-accent: #4398F9;				/* SAS light blue*/
-	--button-inverted-color: white;					/* SAS white */
+	--button-inverted-color: white;				/* SAS white */
 	--button-inverted-accent: #4398F9;				/* SAS slate*/
 
 	--border-color: #0766D1;						/* SAS blue */
@@ -407,10 +407,10 @@ a:hover {
 
 button,
 .button {
-  margin-bottom: .5rem;
+  margin-bottom: 1.5rem;
 }
 .grid-container .button {
-	margin-right: 3rem;
+	margin-right: 2rem;
 }
 .button,
 button,
@@ -418,14 +418,14 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
 	display: inline-block;
-	height: 40px;
+	height: 37px;
 	padding: 0 26px;
 	color: var(--theme-hue);
 	text-align: center;
-	font-size: 14.5px;
+	font-size: 83%;
 	font-weight: normal;
 	line-height: 37px;
-	letter-spacing: .1rem;
+	letter-spacing: .12rem;
 	text-transform: none;
 	text-decoration: none;
 	white-space: nowrap;
@@ -454,7 +454,7 @@ button.button-classic,
 input[type="submit"].button-classic,
 input[type="reset"].button-classic,
 input[type="button"].button-classic {
-  color: var(--button-inverted-color);
+  color: var(--text-color-inverted);
   background-color: var(--button-primary-color);
   border-color: var(--button-primary-color); 
   text-decoration: none !important;
@@ -498,7 +498,31 @@ background-color: var(--button-inverted-accent);
 border-color: var(--button-inverted-accent); 
 text-decoration: none !important;
 }
-
+.button.button-clear,
+button.button-clear,
+input[type="submit"].button-clear,
+input[type="reset"].button-clear,
+input[type="button"].button-clear {
+color: var(--button-primary-color);
+background-color: var(--background-color);
+border-color: transparent; 
+text-decoration: none !important;
+}
+.button.button-clear:hover,
+button.button-clear:hover,
+input[type="submit"].button-clear:hover,
+input[type="reset"].button-clear:hover,
+input[type="button"].button-clear:hover,
+.button.button-clear:focus,
+button.button-clear:focus,
+input[type="submit"].button-clear:focus,
+input[type="reset"].button-clear:focus,
+input[type="button"].button-clear:focus {
+color: var(--button-primary-color);
+background-color: var(--background-color);
+border-color: var(--button-primary-color); 
+text-decoration: none !important;
+}
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
