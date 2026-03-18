@@ -706,9 +706,9 @@ td:last-child {
 	text-transform: uppercase;
 	font-size: 50%;
 	font-weight: bolder;
-	border: 1px solid var(--accent-hue);
-	border-radius: .5rem;
-	padding: 1rem;
+	border: 1px solid var(--theme-hue);
+	border-radius: .35rem;
+	padding: 1rem 1rem .7rem 1rem;
 	display: inline-block;
 }
 .u-img-hero {
