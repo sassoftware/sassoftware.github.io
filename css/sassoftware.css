@@ -370,11 +370,25 @@ a:hover {
 	background-color: var(--theme-hue);
 	margin: 0 1rem 0 0;
 }
+.blade-dark {
+	width: 10rem;
+	height: 5rem;
+	border-radius: 0 5rem 0 5rem;
+	background-color: var(--darker-hue);
+	margin: 0 1rem 0 0;
+}
 .blade-reverse {
 	width: 10rem;
 	height: 5rem;
 	border-radius: 5rem 0 5rem 0;
 	background-color: var(--theme-hue);
+	margin: 0 1rem 0 0;
+}
+.blade-reverse-light {
+	width: 10rem;
+	height: 5rem;
+	border-radius: 5rem 0 5rem 0;
+	background-color: var(--accent-hue);
 	margin: 0 1rem 0 0;
 }
 .quartercircle-left {
