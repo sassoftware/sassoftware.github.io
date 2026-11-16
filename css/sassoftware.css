@@ -735,9 +735,21 @@ td:last-child {
 		display: none;
 	}
 }
-.u-img-border {
-	border: 0.2rem solid var(--image-border); 
-	border-radius: 0.5rem;
+.u-img-border-blue {
+	border: 0.2rem solid var(--border-color); 
+	border-radius: 0.9rem;
+}
+.u-img-border-dark {
+	border: 0.2rem solid var(--border-color-richer); 
+	border-radius: 0.9rem;
+}
+.u-img-border-light {
+	border: 0.2rem solid var(--border-color-softer); 
+	border-radius: 0.9rem;
+}
+.u-img-border-clear {
+	border: 0.2rem solid var(--background-color); 
+	border-radius: 0.9rem;
 }
 .u-img-divider {
 	width: auto;
